@@ -1,0 +1,90 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 1000px;
+    height: 250px;
+    border: 5px solid #EB00FF;
+    
+}
+
+
+
+.item-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    border-width: 5px 10px 5px 5px;
+    border-style: solid;
+    border-color: white;
+    width: 750px;
+    align-self: stretch;
+}
+
+.item-1 .div1 {
+    display: flex;
+    justify-content:flex-start;
+    padding: 0px;
+    width :250px;
+    align-self: stretch;
+    
+}
+.div1 > div {
+    width : 100px;
+    height : 100px;
+    background-color:#9314A8
+}
+
+
+.item-1 .div2 {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding: 0px;
+    width :250px;
+    align-self: stretch; 
+}
+.div2 > div {
+    width : 100px;
+    height : 100px;
+    background-color:#9314A8
+}
+
+
+.item-1 .div3 {
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    padding: 0px;  
+    width :250px;
+    align-self: stretch;
+    
+}
+.div3 > div {
+    width : 100px;
+    height : 100px;
+    background-color:#9314A8
+}
+
+
+.item-2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 250px;
+    order: 0;
+    align-self: stretch;
+    padding: 0px;
+    border-width: 0px 0px 0px 5px;
+    border-style: solid;
+    border-color: #EB00FF
+}
