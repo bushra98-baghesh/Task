@@ -18,7 +18,7 @@
 
 
 
-.item-1 {
+.boxes-container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -29,54 +29,35 @@
     width: 750px;
     align-self: stretch;
 }
-
-.item-1 .div1 {
+.flex-start ,.justify-center ,.flex-end {
     display: flex;
-    justify-content:flex-start;
-    padding: 0px;
-    width :250px;
-    align-self: stretch;
-    
-}
-.div1 > div {
-    width : 100px;
-    height : 100px;
-    background-color:#9314A8
-}
-
-
-.item-1 .div2 {
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    padding: 0px;
-    width :250px;
-    align-self: stretch; 
-}
-.div2 > div {
-    width : 100px;
-    height : 100px;
-    background-color:#9314A8
-}
-
-
-.item-1 .div3 {
-    display: flex;
-    justify-content:flex-end;
-    align-items: flex-end;
     padding: 0px;  
     width :250px;
     align-self: stretch;
+
+}
+.boxes-container .flex-start{
+    justify-content:flex-start;
     
 }
-.div3 > div {
+
+.boxes-container .justify-center {
+    justify-content:center;
+    align-items:center; 
+}
+.boxes-container .flex-end {
+    justify-content:flex-end;
+    align-items: flex-end;
+    
+}
+.flex-start> div , .justify-center > div , .flex-end> div{
     width : 100px;
     height : 100px;
     background-color:#9314A8
 }
 
 
-.item-2{
+.empty-container{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
