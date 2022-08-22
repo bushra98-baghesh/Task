@@ -3,8 +3,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -16,12 +14,9 @@
     
 }
 
-
-
-.boxes-container {
+.container {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     padding: 0px;
     border-width: 5px 10px 5px 5px;
     border-style: solid;
@@ -29,38 +24,37 @@
     width: 750px;
     align-self: stretch;
 }
-.flex-start ,.justify-center ,.flex-end {
-    display: flex;
+.boxes-container{
+  display: flex;
     padding: 0px;  
     width :250px;
     align-self: stretch;
-
 }
-.boxes-container .flex-start{
-    justify-content:flex-start;
-    
+.justify-start {
+     justify-content:flex-start;
 }
-
-.boxes-container .justify-center {
+.justify-center {
     justify-content:center;
-    align-items:center; 
 }
-.boxes-container .flex-end {
+.justify-end {
     justify-content:flex-end;
-    align-items: flex-end;
-    
 }
-.flex-start> div , .justify-center > div , .flex-end> div{
-    width : 100px;
+.align-start {
+    align-items: flex-start;
+}
+.align-center {
+    align-items: center;
+}
+.align-end {
+    align-items: flex-end;
+}
+.box {
+       width : 100px;
     height : 100px;
     background-color:#9314A8
 }
-
-
 .empty-container{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     width: 250px;
     order: 0;
     align-self: stretch;
